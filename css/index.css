@@ -1,0 +1,737 @@
+/* 头部样式 */
+
+
+/* 字体引入 */
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?jk7mag');
+    src: url('../fonts/icomoon.eot?jk7mag#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?jk7mag') format('truetype'), url('../fonts/icomoon.woff?jk7mag') format('woff'), url('../fonts/icomoon.svg?jk7mag#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+@media screen and (max-width:767px) {
+    html {
+        font-size: 8px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    html {
+        font-size: 13px;
+    }
+    .search {
+        display: none!important;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    /* 设置最大值宽度 */
+    body {
+        width: 1519px;
+    }
+    html {
+        font-size: 18px;
+    }
+    .head_nav a:last-child::after {
+        top: 20px;
+        left: 90px;
+    }
+    .search {
+        display: block!important;
+    }
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 2000px;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+
+/* 头部样式 */
+
+header {
+    position: fixed;
+    height: 5.75rem;
+    display: flex;
+    width: 84.4rem;
+    z-index: 999;
+}
+
+.head {
+    flex: 1;
+    height: 5.75rem;
+    line-height: 5.75rem;
+    padding-left: 40%;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.h_bag {
+    background-color: #9c0d2b;
+}
+
+.log {
+    position: absolute;
+    left: 3rem;
+    top: 0;
+    width: 31.25rem;
+    height: 5.75rem;
+}
+
+.log img {
+    vertical-align: middle;
+    width: 100%;
+    height: 5.75rem;
+}
+
+.search {
+    position: absolute;
+    top: -1.6875rem;
+    right: 1.875rem;
+    font-size: .75rem;
+    color: #eee;
+}
+
+.search li {
+    float: left;
+    padding: 0 .625rem;
+}
+
+.search li:last-child {
+    position: relative;
+}
+
+.search li:last-child::after {
+    position: absolute;
+    content: '';
+    font-family: 'icomoon';
+    top: 0;
+    right: 1.125rem;
+    color: #fff;
+}
+
+.search input {
+    background-color: transparent;
+    border: 1px solid #fff;
+    width: 5.3125rem;
+    color: #fff;
+    outline: 0;
+}
+
+.head_nav {
+    height: 5.75rem;
+    line-height: 6.75rem;
+}
+
+.head_nav>li {
+    position: relative;
+    float: left;
+    padding: 0 1rem;
+}
+
+.head_nav>li:nth-child(n+2)::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: '';
+    font-family: 'icomoon';
+    color: #fff;
+}
+
+.head_nav li>ul {
+    display: none;
+    position: absolute;
+    top: 3.9375rem;
+    left: 0;
+    line-height: 1.875rem;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.head_nav li>ul>li {
+    background-color: #cccccc;
+}
+
+.head_nav li>ul>li:hover {
+    background-color: #683f65;
+}
+
+.head_nav li>ul>li>a {
+    font-size: .875rem;
+}
+
+.icon_font {
+    position: absolute;
+    display: block;
+    width: 1.875rem;
+    height: 1.875rem;
+    font-family: 'icomoon';
+    top: 0;
+    right: 1.25rem;
+    font-size: 1.875rem;
+    display: none;
+}
+
+@media screen and (max-width:1217px) {
+    .head_nav {
+        display: none;
+    }
+    .log {
+        left: 0;
+    }
+    .icon_font {
+        display: block;
+    }
+    .search {
+        display: none;
+    }
+}
+
+
+/* 轮播图 */
+
+.img_nav {
+    position: relative;
+    width: 100%;
+    height: 41.7778rem;
+    overflow: hidden;
+}
+
+.prev_btn {
+    display: none;
+    position: absolute;
+    width: 4.4444rem;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url(../images/prev-btn.png) no-repeat -30% 48%;
+    cursor: pointer;
+    z-index: 33;
+}
+
+.next_btn {
+    display: none;
+    position: absolute;
+    width: 4.4444rem;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: url(../images/next-btn.png) no-repeat 135% 48%;
+    cursor: pointer;
+    z-index: 33;
+}
+
+.img_nav_1 {
+    position: absolute;
+    right: 1.6667rem;
+    bottom: 1.6667rem;
+    z-index: 33;
+}
+
+.img_nav_1 li {
+    float: left;
+    width: .6667rem;
+    height: .6667rem;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-left: .6667rem;
+    cursor: pointer;
+}
+
+.img_nav_2 {
+    width: 770%;
+    position: relative;
+}
+
+.img_nav_2 li {
+    float: left;
+}
+
+.img_nav_2 li img {
+    display: block;
+    width: 84.3889rem;
+    height: 41.7778rem;
+}
+
+.current {
+    background-color: #fff;
+}
+
+
+/* 内容部分 */
+
+.contain {
+    width: 71.1111rem;
+    margin: 0 auto;
+}
+
+.contain_bh {
+    position: relative;
+    width: 100%;
+    margin-bottom: 2.7778rem;
+}
+
+.contain .bh_1 {
+    position: relative;
+    font-size: 20px;
+    margin: 0 0 0 1.7778rem;
+}
+
+.contain .bh_1::before {
+    position: absolute;
+    top: 0.38888rem;
+    left: -1.5rem;
+    content: '';
+    font-family: 'icomoon';
+    color: #90000a;
+    font-size: 1.3333rem;
+}
+
+.bh_2 {
+    position: absolute;
+    top: .3889rem;
+    right: 0;
+    width: 3.4444rem;
+    height: 1rem;
+    background: url(../images/icon_more.png) no-repeat;
+}
+
+.contain_bd {
+    display: flex;
+}
+
+.bd_1 {
+    display: flex;
+    flex: 2;
+}
+
+.bd_1 .bd_1_1 {
+    position: relative;
+    flex: 1;
+    margin-right: 3.8889rem;
+}
+
+.bd_1 .bd_1_1::after {
+    position: absolute;
+    content: '4月';
+    top: 2.7778rem;
+    left: 1.4444rem;
+    font-size: .6667rem;
+    color: #fff;
+}
+
+.bd_1 .bd_1_1::before {
+    float: left;
+    display: block;
+    content: '12';
+    width: 3.7778rem;
+    height: 3.7778rem;
+    background-color: #90000a;
+    margin-right: .8333rem;
+    margin-top: .5556rem;
+    font-size: 1.3333rem;
+    color: #fff;
+    text-align: center;
+    line-height: 3.2222rem;
+}
+
+.bd_1 .bd_1_1 span {
+    display: block;
+    line-height: 1.5;
+    width: 19.5556rem;
+    height: 7.7222rem;
+    font-size: .7778rem;
+    color: #777;
+}
+
+.bd_1 .bd_1_1 span::after {
+    position: absolute;
+    right: .5556rem;
+    top: 23.8889rem;
+    content: '详情>';
+    font-size: .6667rem;
+    color: #999;
+}
+
+.bm_ima {
+    margin: 1.1111rem 0;
+}
+
+.bd_1 .bd_1_2 {
+    flex: 1;
+}
+
+.bd_2 {
+    margin-top: .5556rem;
+}
+
+.bd_2 li {
+    flex: 1;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: .8333rem;
+}
+
+.bd_2 li e {
+    font-family: 'icomoon';
+    font-size: .6667rem;
+}
+
+.bd_2 li a {
+    padding-left: .5556rem;
+    display: inline-block;
+    width: 18.3333rem;
+    font-size: .8889rem;
+    color: #000;
+    /* 一行显示 */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.bd_2 li span {
+    font-size: .6667rem;
+    color: #333;
+    float: right;
+    padding-left: 1.1111rem;
+    margin-top: .2778rem;
+}
+
+
+/* 导航图 */
+
+.nav_img {
+    display: flex;
+    width: 100%;
+    padding: 1.25rem 0;
+}
+
+.nav_img li {
+    float: left;
+    flex: 1;
+    width: 21.0944rem;
+}
+
+.nav_img li a img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav_img li:nth-child(even) {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav_img li:nth-child(even) a {
+    flex: 1;
+}
+
+
+/* 人物 */
+
+.people {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 2.7778rem;
+}
+
+.p_1,
+.p_2 {
+    position: relative;
+    flex: 1;
+    float: left;
+    overflow: hidden;
+}
+
+.p_1 a {
+    display: block;
+    width: 38.3333rem;
+    height: 21.5556rem;
+    margin-left: 2.7778rem;
+}
+
+.p_1 span {
+    position: absolute;
+    top: 19.4444rem;
+    left: 4.7222rem;
+    font-size: 1.1111rem;
+    color: #fff;
+}
+
+.p_1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.p_2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.p_2_1 {
+    float: 1;
+    font-size: 2.2222rem;
+    color: #333;
+}
+
+.p_2_1 span {
+    display: block;
+}
+
+.p_2_1 a {
+    position: relative;
+    font-size: .7778rem;
+    color: #94070A;
+    padding-bottom: 1.1111rem;
+    padding-left: .5556rem;
+}
+
+.p_2_1 a::before {
+    position: absolute;
+    top: -0.8333rem;
+    left: -2.7778rem;
+    display: block;
+    content: '';
+    width: 2.5rem;
+    height: 2.5rem;
+    background: url(https://www.pku.edu.cn/Public/static/themes/image/more1a.svg) no-repeat;
+}
+
+.p_2_2 {
+    width: 38.3333rem;
+    height: 21.5556rem;
+    margin-top: 2.7778rem;
+    position: relative;
+    float: 1;
+}
+
+.p_2_2 img {
+    width: 100%;
+}
+
+.p_2_2 span {
+    position: absolute;
+    top: 19.4444rem;
+    left: 1.9444rem;
+    font-size: 1.1111rem;
+    color: #fff;
+}
+
+
+/* 合作交流 */
+
+.communication {
+    width: 84.3889rem;
+    padding: 6.1111rem 0;
+}
+
+.show_div {
+    width: 77.7778rem;
+    margin: 0 auto;
+}
+
+.show_t {
+    text-align: center;
+    margin-bottom: 2.7778rem;
+}
+
+.show_t span {
+    font-size: 2.2222rem;
+    color: #333;
+}
+
+.show_b {
+    display: flex;
+}
+
+.show_b1,
+.show_b2 {
+    flex: 1;
+    position: relative;
+}
+
+.show_b1 a {
+    display: block;
+    width: 38.3333rem;
+    height: 38.3333rem;
+}
+
+.show_b2 {
+    display: flex;
+}
+
+.show_b2 a {
+    display: block;
+    width: 18.6111rem;
+    height: 18.6111rem;
+}
+
+.show_b2 img {
+    width: 100%;
+}
+
+.s_b1,
+.s_b2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.s_bb1,
+.s_bb11,
+.s_bb2,
+.s_bb22 {
+    flex: 1;
+    position: relative;
+}
+
+.s_bb1 a,
+.s_bb2 a {
+    padding-bottom: 1.6667rem;
+    padding-left: .8333rem;
+}
+
+.s_bb11 a {
+    padding-left: .8333rem;
+}
+
+.show_b1 span {
+    position: absolute;
+    bottom: 3.3333rem;
+    left: 1.6667rem;
+    font-size: 1.1111rem;
+    color: #fff;
+}
+
+.s_bb1 span {
+    position: absolute;
+    bottom: 2.6667rem;
+    left: 7.8889rem;
+    font-size: 1.1111rem;
+    color: #fff;
+}
+
+.s_bb11 span {
+    position: absolute;
+    bottom: 2.6667rem;
+    left: 7.8889rem;
+    font-size: 1.1111rem;
+    color: #fff;
+}
+
+.s_bb2 span {
+    position: absolute;
+    bottom: 2.6667rem;
+    left: 7.8889rem;
+    font-size: 1.1111rem;
+    color: #fff;
+}
+
+.more {
+    position: relative;
+    display: block;
+    font-size: .7778rem;
+    color: #94070A;
+    width: 6.4444rem;
+    height: 2.5rem;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 2.5rem;
+}
+
+.more::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: -1.6667rem;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: url(https://www.pku.edu.cn/Public/static/themes/image/more1a.svg) no-repeat;
+}
+
+
+/* 参观游览 */
+
+.visit {
+    width: 77.7778rem;
+    margin: 0 auto;
+    padding-bottom: .8889rem;
+}
+
+.visit_bh {
+    text-align: center;
+    margin-bottom: 2.7778rem;
+}
+
+.visit_bh span {
+    font-size: 2.2222rem;
+    color: #333;
+}
+
+.visit_bd {
+    width: 100%;
+}
+
+.visit_bd ul {
+    display: flex;
+    width: 100%;
+}
+
+.visit_bd li {
+    flex: 1;
+    float: left;
+}
+
+
+/* 尾部 */
+
+footer {
+    width: 100%;
+    background-color: #9c0d2b;
+    height: 7.8889rem;
+}
+
+.f_logo {
+    margin-left: 50%;
+    transform: translateX(-25%);
+}
+
+.f_message {
+    padding-left: 50%;
+    transform: translateX(-25%);
+    padding-top: 25px;
+}
+
+.f_message li {
+    float: left;
+    padding: 0 1.3889rem;
+    border-right: 1px solid #eee;
+    color: #eee;
+    font-size: .7778rem;
+}
+
+.f_message li:last-child {
+    border-right: 0;
+}
